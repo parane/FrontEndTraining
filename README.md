@@ -3,20 +3,20 @@
 >Install node 
 >Optional Visual studio code Editor
 
-# Step 1 :
+## Step 1 : Init npm with package.json 
 npm is the package manager for Manage our javascript dependencies.
 ```
 npm init 
 ```
 
-# Step 2 : Configure Webpack
+## Step 2 : Configure Webpack
 webpack is a module bundler for modern JavaScript applications. 
 install webpack globally
 ```
 npm install webpack -g
 ```
 
-# Step 3 : Webpack Checking functionalitities
+## Step 3 : Webpack Checking functionalitities
 
 ```
 webpack ./src/entry.js ./src/bundle.js
