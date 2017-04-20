@@ -62,3 +62,11 @@ module.exports = {
 ```
 
 >bundle.js(output file ) copied to dist folder
+
+## Step 6 : Adding webpack dependency to the project !!  
+
+```
+npm install --save-dev webpack
+```
+It will be define webpack into package.json, add webpack module into the node_modules(git ignore)
+so if user excute ``` npm install``` downloaded.
