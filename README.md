@@ -4,13 +4,13 @@
 >Optional Visual studio code Editor
 
 ## Step 1 : Init npm with package.json 
-npm is the package manager for Manage our javascript dependencies.
+npm is the package manager for Manage our javascript dependencies.<br />
 ```
 npm init 
 ```
 
 ## Step 2 : Configure Webpack
-webpack is a module bundler for modern JavaScript applications. 
+webpack is a module bundler for modern JavaScript applications. <br />
 install webpack globally
 ```
 npm install webpack -g
@@ -26,10 +26,10 @@ check bundle.js create in src folder and open index html file with welcome messa
 
 ## Step 4 : Webpack configure with webpack.config.js
 
-create file webpack.config.js for webpack related configuration. It has Four Core Concepts: entry, output, loaders, and plugins [ref](https://webpack.js.org/concepts/).
-Entry - The entry point tells webpack where to start.
-output - Where the output file locate
-Lets config step3 task in webpack.config.js
+create file webpack.config.js for webpack related configuration. It has Four Core Concepts: entry, output, loaders, and plugins [ref](https://webpack.js.org/concepts/).<br />
+Entry - The entry point tells webpack where to start.<br />
+output - Where the output file locate<br />
+Lets config step3 task in webpack.config.js<br />
 ```
 module.exports = {
   entry: './src/entry.js',
@@ -38,4 +38,10 @@ module.exports = {
   }
 }
 ```
+
+run in a project dir.
+```
+wepback
+```
+
 > wait ? create bundle.js But you could not create within src. what are missing item ? 
