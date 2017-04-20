@@ -45,3 +45,20 @@ wepback
 ```
 
 > wait ? create bundle.js But you could not create within src. what are missing item ? 
+
+## Step 5 : output file location
+
+```
+var path = require('path');
+
+
+module.exports = {
+  entry: './src/entry.js',
+  output: {
+        path: path.resolve(__dirname, './dist'),
+        filename: "bundle.js",
+  }
+}
+```
+
+>bundle.js(output file ) copied to dist folder
