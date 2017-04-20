@@ -70,3 +70,19 @@ npm install --save-dev webpack
 ```
 It will be define webpack into package.json, add webpack module into the node_modules(git ignore)
 so if user excute ``` npm install``` downloaded.
+
+## Step 7 : Using webpack with npm
+
+Given it's not particularly fun to run webpack from the CLI this way, we can set up a little shortcut. Adjust package.json like this
+
+```
+{
+  ...
+  "scripts": {
+    "build": "webpack"
+  },
+  ...
+}
+```
+
+You can now achieve the same(Step 5) as above by using ``` npm run build```
