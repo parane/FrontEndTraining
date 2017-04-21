@@ -80,3 +80,13 @@ webpack-dev-server
 
 check localhost:9000/ we ll get "It works. It works. " message, yehoo!!!
 
+## Step 4 : Webpack Loaders
+
+webpack treats every file (.css, .html, .scss, .jpg, etc.) as a module. Loaders in webpack transform these files into modules as they are added to your dependency graph. It has test and use.
+ At a high level, they have two purposes in your webpack config.
+
+    Identify what files should be transformed by a certain loader. (test property)
+    Transform that file so that it can be added to your dependency graph (and eventually your bundle). (use property)
+
+
+ 
