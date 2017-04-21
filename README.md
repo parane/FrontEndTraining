@@ -60,10 +60,9 @@ Most plugins are customizable via options. Since you can use a plugin multiple t
             }
         })
     ]
+```
 
-    ```
-
-> note This plugin copied index html file in src to dist with collapseWhiteSpace
+>note This plugin copied index html file in src to dist with collapseWhiteSpace
 
 ###  Step 4.2 npm install HtmlWebpackPlugin.
 
