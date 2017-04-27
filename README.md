@@ -80,13 +80,54 @@ webpack-dev-server
 
 check localhost:9000/ we ll get "It works. It works. " message, yehoo!!!
 
-## Step 4 : Webpack Loaders
+## Step 5 : Webpack Loaders
 
-webpack treats every file (.css, .html, .scss, .jpg, etc.) as a module. Loaders in webpack transform these files into modules as they are added to your dependency graph. It has test and use.
+webpack treats every file (.css, .html, .scss, .jpg, etc.) as a module. Loaders in webpack transform these files into modules as they are added to your dependency graph. It has 'test' and 'use' params
+.
  At a high level, they have two purposes in your webpack config.
 
     Identify what files should be transformed by a certain loader. (test property)
     Transform that file so that it can be added to your dependency graph (and eventually your bundle). (use property)
 
+###  Step 5.1 baber Integerate with webpack
 
- 
+
+Babel has support for the latest version of JavaScript through syntax transformers. These plugins allow you to use new syntax, right now without waiting for browser support. so it is converted new version of javascript to browser supported javascript.
+
+###  Step 5.2 install baber with webpack
+We need to install babel-loader via npm
+
+```
+npm install --save-dev babel-loader babel-core babel-preset-env webpack
+``` 
+
+###  Step 5.3 add baber as Webpack Loaders
+
+```
+  module: {
+    rules: [
+      {test: /\.(js|jsx)$/, exclude: '/node_modules/', use: 'babel-loader'}
+    ]
+  }
+  ``` 
+
+>note : test and use are explained in step 5. exclude file scanning to node_modules. those module conatins lot of dependencies js. 
+
+###  Step 5.4 .babelrc
+
+with this param 
+```
+{ "presets": ["env"] }
+```
+
+>we can use tons of preset (like es20XX etc..) . we already install env preset. 'env' includes transforms for all features that have landed in the spec. so it  works like es2015, es2016, es2017 all together. babel-preset-react is the set of transformations needed to convert React/Facebook-related syntax extensions like Flowtype and React's JSX.
+
+###  Step 5.6 add some es6 syntax to entry.js 
+```
+  let sayHello = () => {
+    document.write("es6 sysntac");  
+  }
+  sayHello();
+```
+
+and run webpack server and get the es6 sysntac message 
