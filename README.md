@@ -125,9 +125,76 @@ with this param
 ###  Step 5.6 add some es6 syntax to entry.js 
 ```
   let sayHello = () => {
+    
     document.write("es6 sysntac");  
   }
   sayHello();
 ```
 
-and run webpack server and get the es6 sysntac message 
+and run webpack server and get the es6 syntax message 
+
+Here We have new es6 syntax 
+1. Let 
+
+Let limit = 100 or const limit = 100
+Those are converted to var limit = 100 in vannila script.
+>note let Can change value. but const cannot be. more ref : https://www.sitepoint.com/joys-block-scoping-es6/
+
+2. Arrow Function
+
+An arrow function expression has a shorter syntax than a function expression and does not bind its own this, arguments, super, or new.target.
+() => { statements }
+
+###  Step 5.7  - Es6 Template Literals
+
+
+```
+    var name= `Para!`;
+    document.write(`Hello ${myMultiString}`);  
+```
+
+ES6 → `Hello ${myMultiString}`;
+BackTicks!
+Eases string update and concatenation
+
+### some other synatax in es6
+
+There are lot of new systax and literals introduce in each new version for enhance  maintainabilty or performance based. keep eye on the new changes. here some new syntaxs : 
+
+### Destructuring assignment ([ref](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment))
+
+The destructuring assignment syntax is a JavaScript expression that makes it possible to extract data from arrays or objects into distinct variables.
+
+ex: 
+```
+    var a, b, rest;
+    [a, b] = [10, 20];
+    console.log(a); // 10
+    console.log(b); // 20
+
+```
+
+### Class ([ref](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes))
+JavaScript classes introduced in ECMAScript 2015 are syntactical sugar over JavaScript's existing prototype-based inheritance. The class syntax is not introducing a new object-oriented inheritance model to JavaScript. JavaScript classes provide a much simpler and clearer syntax to create objects and deal with inheritance.
+
+ex:
+```
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+```
+
+Lets Explore the es6 cool features ....
+
+[Top 10 ES6 Features](https://webapplog.com/es6/)
+[ECMAScript 6 with Code Snippet](https://github.com/lukehoban/es6features)
+
+Explore with The weird parts
+
+Lets check some of weird part in javascript those are fixed or enhance in newer version :)
+[JavaScript — The weird parts](https://medium.com/@daffl/javascript-the-weird-parts-8ff3da55798e)
+
+Promises introduce in es6, so can u list down some of fix or alternative for some weird part which is mentioned in above link ?
