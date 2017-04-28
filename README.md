@@ -187,12 +187,13 @@ class Rectangle {
 }
 ```
 
-Lets Explore the es6 cool features ....
+### Lets Explore the es6 cool features ....
 
 [Top 10 ES6 Features](https://webapplog.com/es6/)
+
 [ECMAScript 6 with Code Snippet](https://github.com/lukehoban/es6features)
 
-Explore with The weird parts
+###  Explore with The weird parts
 
 Lets check some of weird part in javascript those are fixed or enhance in newer version :)
 [JavaScript — The weird parts](https://medium.com/@daffl/javascript-the-weird-parts-8ff3da55798e)
