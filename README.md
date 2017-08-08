@@ -138,7 +138,40 @@ Here We have new es6 syntax
 
 Let limit = 100 or const limit = 100
 Those are converted to var limit = 100 in vannila script.
+so why they introduce the 'let' 'const' ?
+```
+ if(false){
+  var x = "hello";
+ }
+ console.log(x);
+```
+This code will not fail and it will just print undefine in console.  This behaviour has been the cause of many bug.
+```
+ if(false){
+  let x = "hello";
+ }
+ console.log(x);
+```
+
+This code will raise a ReferenceError: x is not defined because we are trying to print x. very useful following scenarios:
+```
+for (let i=0; i < 10; i++) {
+//do some stuff
+ }
+ console.log(x);
+```
+ES2015 introduces also the const keyword. This keyword allows us to declare constant which can not be change. 
+
+Even though const is not worked as other programming. consider following scenario:
+```
+const x = {};
+x.name = 'John';
+```
+it worked fine in es2015.
+
 >note let Can change value. but const cannot be. more ref : https://www.sitepoint.com/joys-block-scoping-es6/
+
+
 
 2. Arrow Function
 
